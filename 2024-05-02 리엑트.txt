@@ -1,0 +1,50 @@
+2024-05-02
+java script 
+
+프론트 : react
+백엔드 : nodejs
+백엔드 :java
+react  -- facebook 1 70   
+vue - google 직원  2 20
+angluarJS  -- google   3  10
+현재 우리가쓴것 프론트 엔드 라이브러리 또는 프레임워크 3총사
+프론트 : html.css.javasvript 
+예전 : UI 디자인 -- + 프론트 엔드 -> html.css.javasrcpript 
+--> 프론트엔드 프로그래머 > 백엔드 프로그래머 
+javasvript  -====> 바닐라스크립트
+
+-----------------------리엑트----------------------
+
+-->typescript   
+react + 백엔드 ==> nestJS (리액트로 게시판작업다)  -> html을 조각내서 만든다.
+리액트는 : 비동기형이다.
+
+1.리엑트의 시작
+ nodejs  - npm install 프로그램  (setup.exe)
+ nodejs  - npx create-react-app myfirst;(파일명) 
+
+  캐시삭제 : npm cache clean --force
+                rm package-lock.json
+     다시설치 : npm --verbose install
+--> 1환경변수설정(시스템)--> 변수이름  NODE_HOME    변수값 : C:\Program Files\nodejs(설치경로) 
+   -->2 사용자 변수(위) 패치 : 변수 집어넣기 새로만들기: %NODE_HOME%\
+       -->3 posershell 관리자권한  : Set-ExecutionPolicy Unrestricted 엔터 , Y엔터
+ ->4npm install -g create-react-app  << vs에입력
+ ->5create-react-app myfirst 폴더만들어짐 좀 시간걸림
+ -->npx create-react-app myfirst (다시설치방법)
+
+--> npm start (시작 홈페이지열림)  -- 끄기 컨트롤 + c  
+--설치 extensions에서(vs코드 왼쪽아래)  : react 설치, 리엑트 네이티브,  // ES7+ React/Redux/React-Native snippets(단축키생성함수)
+
+ 
+
+class App extends ReactComponent{}
+function App()  <<옛날식
+
+App = () => {   <<최신식
+ }
+  --> reace 누르면 자동으로 함수 생성댐 
+
+ 
+        
+
