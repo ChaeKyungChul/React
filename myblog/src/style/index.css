@@ -1,0 +1,159 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+html,body{
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: "Nanum Pen Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  font-size: 23px;
+}
+.navi{
+  min-height:200px;
+  background:#fff;
+  border-left:1px solid #ededed;
+  border-right:1px solid #ededed;
+  padding:10px 1rem 10px;
+  position:fixed;
+  text-align:left;
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: auto;
+}
+.logo{
+  max-width:30%;
+  transition:all 300ms;
+  margin-right:15px;
+}
+.hello{
+  font-weight:600;
+  font-size:1.2rem;
+  margin-top:15px;
+  margin-bottom:50px;
+}
+.navbox{
+   text-align: left;
+   align-self:flex-start;
+   margin-left:20px;
+}
+.nav-tems{
+   display:flex;
+   text-decoration:none;
+   color:#333;
+   text-transform: uppercase;
+   font-weight:500;
+   align-items:center;
+   padding-top:10px;
+   padding-bottom:10px;
+}
+.nav-tems>span{
+    display:inline-block;
+    width:15px;
+    height:2px;
+    background:#333;
+    transition: all 300ms;
+}
+.nav-tems:hover,
+.nav-tems.action{
+   font-weight:700;
+}
+.nav-tems:hover>span,
+.nav-tems.action>span{
+    width:35px;
+}
+.nav-tems>svg{
+    margin-left:-10px;
+    margin-right:15px;
+    font-size:20px;
+}
+.snsbox a{
+  font-size:2rem;
+  margin-left:8px;
+  margin-right:8px;
+  color:#0fbcf9;
+  transition: all 300ms;
+  position:relative;
+}
+.snsbox a:hover{
+ color:#025f81;
+ font-size:2.2rem;
+}
+.snsbox a:hover::before{
+  font-size:1.2rem;
+  position:absolute;
+  display:block;
+  width:60px;
+  text-align:right;
+  top:-15px;
+  right:5px;
+}
+.snsbox a.github:hover::before{
+   content:"깃허브";
+}
+.snsbox a.insta:hover::before{
+   content:"인스타그램";
+}
+.snsbox a.kakao:hover::before{
+   content:"카카오톡";
+}
+.snsbox a.google:hover::before{
+   content:"구글";
+}
+/*************pages*************/
+section{
+  min-height: 800px;
+}  
+@media (min-width: 576px) {
+  .navi {
+      width: 540px;
+      text-align:left;
+  }
+}
+@media (min-width: 768px) {
+  .navi {
+      width: 720px;
+      text-align:left;
+  }
+}
+@media (min-width: 992px) {
+  .navi {
+      width: 240px;
+      height: 100%;
+      padding:100px 1rem 50px;
+      flex-flow: column wrap;
+      align-items: center;
+  }
+  .navi img{
+     max-width:80%;
+     transition:all 300ms;
+  }
+}
+@media (min-width: 1200px) {
+  .navi {
+      width: 285px;
+      height: 100%;
+      padding:100px 1rem 50px;
+      flex-flow: column wrap;
+      align-items: center;
+  }
+  .navi img{
+    max-width:80%;
+  }
+}
+@media (min-width: 1400px) {
+  .navi {
+      width: 330px;
+      height: 100%;
+      padding:100px 1rem 50px;
+      flex-flow: column wrap;
+      align-items: center;
+  }
+  .navi img{
+    max-width:80%;
+  } 
+}
