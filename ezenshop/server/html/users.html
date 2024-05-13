@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+    <nav>
+        <a href="/">main</a> |
+        <a href="/join">join</a> |
+        <a href="/users">users</a>
+    </nav>
+<h1>회원명단</h1>
+<ul>
+    {% for user in users %}
+       <li>{{user.id}} : {{user.username}} - {{user.userpass}} - {{user.useremail}} </li> 
+    {% endfor %}
+</ul>
+</body>
+</html>

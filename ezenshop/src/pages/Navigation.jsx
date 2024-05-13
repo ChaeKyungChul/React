@@ -1,10 +1,12 @@
-import React from 'react'
+import React, {useState} from 'react'
 import PropTypes from 'prop-types'
 import { MemoryRouter, Route, Routes, Link, matchPath, useLocation } from 'react-router-dom'
 import { StaticRouter } from 'react-router-dom/server'
-import { Stack, Box, Tabs, Tab, Typography } from '@mui/material'
+import { Stack, Box, Tabs, Tab } from '@mui/material'
 import { FcCableRelease } from "react-icons/fc";
+import { BsCart4, BsSearch } from "react-icons/bs";
 
+import Main from './Main';
 import Comf from '../components/Comf';
 import Cover from '../components/Cover';
 import Fabric from '../components/Fabric';
@@ -54,21 +56,17 @@ function MyTabs() {
   );
 }
 
-function CurrentRoute(){
-    const location = useLocation();
-    return <Typography variant="body2" sx={{ pb: 2}} 
-                       color="text.secondary">
-                        Current route: {location.pathname}
-           </Typography>;
-}
-
 const Navigation = () => {
+  const [ showSearchBox, setShowSearchBox] = useState(false);
+  const handleClick = () => {
+    setShowSearchBox(!showSearchBox);
+  }
   return (
     <Router>
-      <Box sx={{ width: '100%' }}>
+      <Box sx={{ width: '100%', boxShadow: 2 }}>
         <Stack 
         direction="row"
-        justifyContent="start"
+        justifyContent="space-between"
         alignItems="center"
         style={{
                   "padding":"10px 40px",
@@ -77,19 +75,35 @@ const Navigation = () => {
                   "boxShadow":"0 0 5px 0 rgba(0,0,0,0.1), 0 0 25px 0 rgba(0,0,0,0.05)"
               }}
         >
-          <Link className="logo"><FcCableRelease /></Link>
-          <span className="bar"></span>
-          {/* MyTabs 콤포넌트 */}
-          <MyTabs />
+          <Box display="flex" alignItems="center" justifyContent="start">
+            <Link className="logo"><FcCableRelease /></Link>
+            <span className="bar"></span>
+            {/* MyTabs 콤포넌트 */}
+            <MyTabs />
+          </Box>
+          <Box className="nav-right-box" display="flex" alignItems="center" justifyContent="end">
+              <div className="search" onClick={handleClick}>
+                { showSearchBox && (
+                  <div className="searchbox">
+                      <form>
+                          <input type="search" name="search" placeholder="search" />
+                          <BsSearch style={{fontSize:"1rem"}} />
+                      </form>
+                  </div>
+                )}  
+                  <BsSearch />
+              </div>
+              <Link><BsCart4 className="cart" /></Link>
+          </Box>
         </Stack> 
         <Routes>
-           <Route path="*" element={<CurrentRoute />} />
-           <Route path="*" element={<CurrentRoute />} />
-           <Route path="*" element={<CurrentRoute />} />
-           <Route path="*" element={<CurrentRoute />} />
-           <Route path="*" element={<CurrentRoute />} />
-           <Route path="*" element={<CurrentRoute />} />
+           <Route path="*" element={<Main />} />
            <Route path="/comf" element={<Comf />} />
+           <Route path="/cover" element={<Cover />} />
+           <Route path="/topper" element={<Topper />} />
+           <Route path="/wool" element={<Wool />} />
+           <Route path="/goose" element={<Goose />} />
+           <Route path="/fabric" element={<Fabric />} />
         </Routes>
       </Box>  
    </Router>

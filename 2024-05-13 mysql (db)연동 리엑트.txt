@@ -1,0 +1,10 @@
+2024-05-13 mysql (db)연동 리엑트
+cors fs mysql r   << db연동시 필요한 설치류 비쥬얼에깜
+ npm i http request-ip << db연동시 필요한 설치류 비쥬얼에깜
+
+app.use(express.urlencoded({ extended: false}));
+const fs = require('fs');
+
+
+equest-ip
+

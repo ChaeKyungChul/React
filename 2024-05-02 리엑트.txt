@@ -22,7 +22,7 @@ react + 백엔드 ==> nestJS (리액트로 게시판작업다)  -> html을 조�
 1.리엑트의 시작
  nodejs  - npm install 프로그램  (setup.exe)
  nodejs  - npx create-react-app myfirst;(파일명) 
-
+rafce << 단축명령어
   캐시삭제 : npm cache clean --force
                 rm package-lock.json
      다시설치 : npm --verbose install

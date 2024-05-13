@@ -1,0 +1,6 @@
+2024-05-13 react form 작업방법
+1.form 의 name 값을 가지고 useState의 object 구성한다.
+2. 각 input에 handleChange를 만들어 태그가 한자한자 입력될때마다 useState의 set값이 변화하게한다.
+
+npm init 
+server
