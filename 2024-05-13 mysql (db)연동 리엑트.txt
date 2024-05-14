@@ -8,3 +8,5 @@ const fs = require('fs');
 
 equest-ip
 
+
+npm i nodemon body-parser express

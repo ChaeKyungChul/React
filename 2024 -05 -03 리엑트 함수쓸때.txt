@@ -1,0 +1,48 @@
+2024 -05 -03 리엑트 함수쓸때
+리엑트 함수를 쓸때
+
+function 이름(){
+
+  return 결과; -->여기에코딩함
+}
+
+const 이름 = () => {
+
+ return 결과 --> 여기에 코딩함
+}
+---------------------------------ex
+
+function 이름(){
+
+  return <하위컴 name="찰수" age="30" />;
+
+const 하위컴 = (name, age 도됨 or  props) => {
+
+ return props.name props.age 
+}
+
+ <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />  
+
+리엑트 = 라이브러리 많이쓰는것  : Ant Design , 부트스트렙(https://react-bootstrap.netlify.app/docs/getting-started/introduction)
+npm install react-icons --save ,  yarn : 패키지관리자 -> npm install -g yarn
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+body {
+  margin: 0;
+  font-family: "Nanum Pen Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  font-size: 40px;
+} 
+폰트
+
+react 
+
+a = 2;
+const [a, setA] = userState(2);
+setA(10)
+
+

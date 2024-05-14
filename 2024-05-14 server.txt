@@ -1,0 +1,5 @@
+npm init
+npm install express
+
+npm i nodemon body-parser express
+yanr start  << 서버실행

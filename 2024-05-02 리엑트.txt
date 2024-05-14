@@ -32,6 +32,13 @@ rafce << 단축명령어
  ->4npm install -g create-react-app  << vs에입력
  ->5create-react-app myfirst 폴더만들어짐 좀 시간걸림
  -->npx create-react-app myfirst (다시설치방법)
+npm install axios
+npm install react-bootstrap bootstrap
+npm install http-proxy-middleware@2.0.6  <<프록시서버설치
+npm install --save-dev @babel/plugin-proposal-private-property-in-object
+yanr start  << 서버실행
+부트스트랩
+
 
 --> npm start (시작 홈페이지열림)  -- 끄기 컨트롤 + c  
 --설치 extensions에서(vs코드 왼쪽아래)  : react 설치, 리엑트 네이티브,  // ES7+ React/Redux/React-Native snippets(단축키생성함수)
