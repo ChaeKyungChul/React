@@ -1,0 +1,15 @@
+2024-05-16 react 꼭 공부해야할 hook 
+
+1.useState,
+2.useEffect
+3.useContext,
+4.useReducer
+5.useRef,
+6.useMemo,
+7.useCallback 
+
+mobile --> java ==> android //
+react-native : 모바일 작업 --> javascript ===> android (컴파일시)
+			               ===> los 도가능         
+
+

@@ -1,0 +1,34 @@
+2024-05-16 react-native 
+
+npx create-react-native-app my-project
+npm start  --> a (안드로이드선택)
+ --> 에뮬레이텨 세팅필요(제어판-시스템-고급시스템-환경변수-)
+--> emulator,platform-toois,tools 
+
+--시스템변수 설정--
+ANDROID_SDK_ROOT
+C:\Users\i7C-402\AppData\Local\Android\Sdk
+---위에 설정 path---
+%ANDROID_SDK_ROOT%emulator
+%ANDROID_SDK_ROOT%platform-tools
+%ANDROID_SDK_ROOT%tools  
+
+npm install adb ?
+1. expo 설치
+2. expo init 앱이름 = npx create-expo-app (--템플릿이름) 앱이름
+npm install -g expo-cli 설치 ==
+expo init my-pjt  --> create로설치하는것임
+npx create-expo-app@latest (expo 최신판 앱설치)
+react-native-safe-area-context
+
+npm install react-native-safe-area-context
+
+npm start = yanr start = expo start
+
+
+//android studio에서 virtual 머신 먼저킨다음
+a누름
+
+
+chrome://inspect/#devices 개발자 
+Port forwarding
