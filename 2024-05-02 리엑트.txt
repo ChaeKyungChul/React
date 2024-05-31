@@ -38,6 +38,7 @@ npm install http-proxy-middleware@2.0.6  <<프록시서버설치
 npm install --save-dev @babel/plugin-proposal-private-property-in-object
 
 npm install moment-timezone
+npm start
 yanr start  << 서버실행
 부트스트랩
 
