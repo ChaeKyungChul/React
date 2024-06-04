@@ -1,0 +1,6 @@
+2024-06-03 https://firebase.google.com/?hl=ko  를이용한 로그인폼만들기
+npm install firebase
+npm install uuid
+ npm install react-router-dom
+npm install react-icons
+yanr start
